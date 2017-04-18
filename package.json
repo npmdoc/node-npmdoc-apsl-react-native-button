@@ -1,1 +1,39 @@
-{     "devDependencies": {         "apsl-react-native-button": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-apsl-react-native-button",     "homepage": "https://github.com/npmdoc/node-npmdoc-apsl-react-native-button",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-apsl-react-native-button.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### api documentation for  [apsl-react-native-button (v3.0.2)](https://github.com/APSL/react-native-button#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-apsl-react-native-button.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-apsl-react-native-button) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-apsl-react-native-button.svg)](https://travis-ci.org/npmdoc/node-npmdoc-apsl-react-native-button)",
+    "devDependencies": {
+        "apsl-react-native-button": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-apsl-react-native-button",
+    "keywords": [
+        "documentation",
+        "apsl-react-native-button"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_apsl_react_native_button.js",
+    "name": "npmdoc-apsl-react-native-button",
+    "nameAlias": "npmdoc_apsl_react_native_button",
+    "nameOriginal": "npmdoc-apsl-react-native-button",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-apsl-react-native-button.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
