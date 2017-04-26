@@ -1,6 +1,6 @@
 # npmdoc-apsl-react-native-button
 
-#### api documentation for  [apsl-react-native-button (v3.0.2)](https://github.com/APSL/react-native-button#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-apsl-react-native-button.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-apsl-react-native-button) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-apsl-react-native-button.svg)](https://travis-ci.org/npmdoc/node-npmdoc-apsl-react-native-button)
+#### basic api documentation for  [apsl-react-native-button (v3.0.2)](https://github.com/APSL/react-native-button#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-apsl-react-native-button.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-apsl-react-native-button) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-apsl-react-native-button.svg)](https://travis-ci.org/npmdoc/node-npmdoc-apsl-react-native-button)
 
 #### React Native button component with rounded corners.
 
@@ -89,7 +89,8 @@
         "lint": "eslint Button.js",
         "test": "npm run lint && jest --verbose"
     },
-    "version": "3.0.2"
+    "version": "3.0.2",
+    "bin": {}
 }
 ```
 
